@@ -35,13 +35,17 @@ body{
     margin-left: auto;
 }
 
+.panel{
+    position: absolute;
+}
+
 .display{
     flex: 1;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     color: #ffffff;
-    font-size: 80px;
+    font-size: 75px;
 }
 
 .control{
@@ -83,4 +87,9 @@ body{
 .bg-dark{
     background-color: #333333;
     color: white;
+}
+
+.selected{
+    background-color: white;
+    color: orange;
 }

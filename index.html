@@ -23,42 +23,44 @@
             <i class="fas fa-battery-full"></i>
         </div>
 
-        <div class="display">
-            0
-        </div>
+        <div class="display">0</div>
 
         <div class="control">
             <div class="row">
-                <button class="bg-gray" data-action="clear">AC</button>
+                <button class="bg-gray" data-action="clear" data-type="clear">AC</button>
                 <button class="bg-gray" data-action="changeSign">&#177</button>
                 <button class="bg-gray" data-action="%">%</button>
-                <button class="bg-orange" data-action="/">&#247</button>
+                <button class="bg-orange" data-action="/" data-type="operator">&#247</button>
             </div>
             <div class="row">
-                <button class="bg-dark" data-action="7">7</button>
-                <button class="bg-dark" data-action="8">8</button>
-                <button class="bg-dark" data-action="9">9</button>
-                <button class="bg-orange" data-action="*">&#215</button>
+                <button class="bg-dark" data-action="7" data-type="number">7</button>
+                <button class="bg-dark" data-action="8" data-type="number">8</button>
+                <button class="bg-dark" data-action="9" data-type="number">9</button>
+                <button class="bg-orange" data-action="*" data-type="operator">&#215</button>
             </div>
             <div class="row">
-                <button class="bg-dark" data-action="4">4</button>
-                <button class="bg-dark" data-action="5">5</button>
-                <button class="bg-dark" data-action="6">6</button>
-                <button class="bg-orange" data-action="-">-</button>
+                <button class="bg-dark" data-action="4" data-type="number">4</button>
+                <button class="bg-dark" data-action="5" data-type="number">5</button>
+                <button class="bg-dark" data-action="6" data-type="number">6</button>
+                <button class="bg-orange" data-action="-" data-type="operator">-</button>
             </div>
             <div class="row">
-                <button class="bg-dark" data-action="1">1</button>
-                <button class="bg-dark" data-action="2">2</button>
-                <button class="bg-dark" data-action="3">3</button>
-                <button class="bg-orange" data-action="+">+</button>
+                <button class="bg-dark" data-action="1" data-type="number">1</button>
+                <button class="bg-dark" data-action="2" data-type="number">2</button>
+                <button class="bg-dark" data-action="3" data-type="number">3</button>
+                <button class="bg-orange" data-action="+" data-type="operator">+</button>
             </div>
             <div class="row">
-                <button class="bg-dark" data-action="0">0</button>
+                <button class="bg-dark" data-action="0" data-type="number">0</button>
                 <button class="bg-dark" data-action=".">.</button>
-                <button class="bg-orange" data-action="=">=</button>
+                <button class="bg-orange" data-action="=" data-type="calculate">=</button>
             </div>
         </div>
     </div>
 </body>
+
+<script src="./scripts/main.js" type="module"></script>
+<script src="./scripts/header.js" ></script>
+<script src="./scripts/calculator.js" type="module"></script>
 
 </html>
