@@ -40,12 +40,21 @@ body{
 }
 
 .display{
-    flex: 1;
+    flex: 1 1;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.display > span{
     color: #ffffff;
     font-size: 75px;
+    overflow: auto;
+    scrollbar-width: none; /*For firefox*/
+}
+
+.display > span::-webkit-scrollbar{
+    display: none;
 }
 
 .control{
@@ -67,6 +76,13 @@ body{
     border-radius: 50%;
     padding: 0;
     font-size: 30px;
+    transition-property: opacity;
+    transition-duration: 50ms;
+    transition-timing-function: ease-in-out;
+}
+
+.row > button:focus-visible{
+    outline: none;
 }
 
 .row:last-child > button:first-child{
@@ -92,4 +108,11 @@ body{
 .selected{
     background-color: white;
     color: orange;
+}
+
+.clicked{
+    transition-property: opacity;
+    transition-duration: 50ms;
+    transition-timing-function:ease-in-out;
+    opacity: 0.5;
 }
