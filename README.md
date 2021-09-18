@@ -8,4 +8,7 @@ There are some special buttons
 - &#xB1; : If the number is positive, clicking this button will make the number negative. If the number is negative, clicking it will make the number positive. User can press `tab` to do the same thing.
 - % : **This button is not modulus!** It multiply the number by 0.01. User can press `%` to do the same thing.
 
+### Arrow Key
+User can press the arrow key of left and right to scroll the display.
+
 ## [Live demo](https://jason89521.github.io/TOP-Calculator/)
