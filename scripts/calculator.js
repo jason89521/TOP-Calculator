@@ -33,6 +33,9 @@ function removeSeletedBtn() {
  * @param {string} value 
  */
 function updateDisplay(value) {
+    if(value.length > 10) {
+        value = (Math.round(value * 1000) / 1000).toString(10);
+    }
     displaySpan.textContent = value;
     displaySpan.scroll(displaySpan.scrollWidth, 0);
     updateClearBtn();
