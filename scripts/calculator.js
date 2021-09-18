@@ -157,8 +157,10 @@ function handleDot() {
  */
 function handleOther(action) {
     if (action === "changeSign") {
-        if (tempValue.indexOf("-") === -1) tempValue = "-" + tempValue;
-        else tempValue = tempValue.slice(1);
+        if (displaySpan.textContent.indexOf("-") === -1) 
+            tempValue = "-" + displaySpan.textContent;
+        else 
+            tempValue = displaySpan.textContent.slice(1);
         // For user's convenience, scroll to the leftmost.
         updateDisplay(tempValue);
         displaySpan.scroll(0, 0);
