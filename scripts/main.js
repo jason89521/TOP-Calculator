@@ -6,6 +6,8 @@ control.addEventListener("click", (e) => {
     e.preventDefault();
     const type = e.target.dataset.type;
     const action = e.target.dataset.action;
+    if(type && type !== "operator") e.target.classList.add("clicked");
+
     if(type === "number") {
         Calculator.handleNumber(action);
     } 
@@ -26,17 +28,7 @@ control.addEventListener("click", (e) => {
     }
 });
 
-control.addEventListener("mousedown", (e) => {
-    const type = e.target.dataset.type;
-    if(type === "operator" || !type) return;
-
-    e.target.classList.add("clicked");
-});
-
-control.addEventListener("mouseup", (e) => {
-    const type = e.target.dataset.type;
-    if(type === "operator" || !type) return;
-
+control.addEventListener("transitionend", (e) => {
     e.target.classList.remove("clicked");
 });
 
