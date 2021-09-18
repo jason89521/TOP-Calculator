@@ -11,8 +11,8 @@ body{
 .phone{
     border: 3px solid silver;
     border-radius: 25px;
-    height: 680px;
-    width: 340px;
+    height: 600px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     background-color: #000000;
@@ -70,8 +70,8 @@ body{
 }
 
 .row > button{
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     border: none;
     border-radius: 50%;
     padding: 0;
@@ -86,7 +86,7 @@ body{
 }
 
 .row:last-child > button:first-child{
-    width: 166.66666px;
+    width: 146.66666px;
     border-radius: 50px;
 }
 
