@@ -7,3 +7,5 @@ There are some special buttons
 - C : This button only clear the operand the user is entering.
 - &#xB1; : If the number is positive, clicking this button will make the number negative. If the number is negative, clicking it will make the number positive.
 - % : **This button is not modulus!** It multiply the number by 0.01.
+
+## [Live demo](https://jason89521.github.io/TOP-Calculator/)
